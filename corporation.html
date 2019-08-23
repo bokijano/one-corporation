@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- link for google fonts --> 
+    <link href="https://fonts.googleapis.com/css?family=Lalezar|Open+Sans&display=swap" rel="stylesheet">
+    <!-- link for social network icons --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- SCSS file - watch Sass file -->
+    <link rel="stylesheet" href="corporation.css">
+    <title>One Corporation</title>
+  </head>
+  <body>
+
+    <!-- navbar done with BOOTSTRAP -->
+    <div class="container">
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+              <a class="navbar-brand" href=""><span class="first">ONE</span><br><span class="sec">corporation</span></a>
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="">FEATURES</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="">PROJECTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="">WHO WE ARE</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="">OUR CLIENTS</a>
+                       </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="">CONTACT US</a>
+                      </li>
+                      <!-- social network items -->
+                      <li class="nav-item social">
+                        <a href="" class="nav-link"><span class="fa fa-linkedin"></span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link"><span class="fa fa-twitter"></span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link"><span class="fa fa-facebook"></span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link"><span class="fa fa-pinterest"></span></a>
+                      </li>
+                  </ul>
+
+              </div> 
+      </nav>
+    </div>
+    <!-- end of navbar -->
+    
+    <!-- header with 3 pictures done with carousel BOOTSTRAP -->
+    <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+      
+      <!-- indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#headerCarousel" data-slide-to="1"></li>
+        <li data-target="#headerCarousel" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="pictures/header carousel/corporate1.jpg" alt="corporate1" width="1100" height="200">
+          <div class="caption">
+            <h1 style="margin-left: -100px;
+                       font-weight: bolder">Corporate,</h1>
+            <h1>one page layout</h1>
+            <p>"Less is more", by Robert Browning</p> 
+            <button class="btn btn-primary">View More</button>
+          </div>
+         
+        </div>
+        <div class="carousel-item">
+            <img src="pictures/header carousel/corporate2.jpg" alt="corporate2" width="1100" height="200">
+            
+          </div>
+        <div class="carousel-item">
+            <img src="pictures/header carousel/corporate3.jpg" alt="corporate3" width="1100" height="200">
+            
+        </div>
+      </div>
+
+      <!-- controls PREVIOUS and NEXT -->
+      <a href="#headerCarousel" class="carousel-control-prev" data-slide="prev">
+        <span class="nextPrev carousel-control-prev-icon"></span>
+      </a>
+      <a href="#headerCarousel" class="carousel-control-next" data-slide="next">
+        <span class="nextPrev carousel-control-next-icon"></span>
+      </a>
+
+    </div>
+    <!-- end of carousel -->
+    
+    <!-- features part with modals -->
+    <div style="margin-top: 40px;" class="container">
+      <h1>FEATURES</h1>
+      <div class="container-1">
+        <div class="box" onclick="developmentModal()">
+          <h3>PRECISE DEVELOPMENT</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore pariatur exercitationem ipsam sunt voluptates maxime.
+          Suscipit, veniam quas exercitationem, harum, saepe ad error
+          quam totam doloribus culpa ea odio quidem!
+          </p>
+          <div id="devModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1>PRECISE DEVELOPMENT</h1>
+              
+                <span class="close" onclick="devClose()">&times;</span>
+               </div> 
+              <div class="modal-body">
+                <p>Here is some text for precise development!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" onclick="uniqueModal()">
+          <h3>UNIQUE DESIGN</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Consequuntur dicta, laboriosam, doloremque maiores non at 
+          qui ad doloribus tempore itaque iste officiis tenetur 
+          laudantium pariatur unde eveniet eligendi deserunt aperiam?
+          </p>
+          <div id="uniqueModal" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1>UNIQUE DESIGN</h1>
+                
+                  <span class="close" onclick="uniqueClose()">&times;</span>
+                 </div> 
+                <div class="modal-body">
+                  <p>Here is some text for inique design!</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="box" onclick="responsiveModal()">
+          <h3>RESPONSIVE LAYOUT</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Et placeat voluptas asperiores quibusdam iure accusantium 
+          saepe fuga dignissimos illo iste mollitia corporis harum 
+          ullam laborum rerum error, vero, ducimus soluta.
+          </p>
+          <div id="responsiveModal" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1>RESPONSIVE LAYOUT</h1>
+                
+                  <span class="close" onclick="respClose()">&times;</span>
+                 </div> 
+                <div class="modal-body">
+                  <p>Here is some text for responsive layout!</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="box" onclick="seoModal()">
+          <h3>SEO FRIENDLY</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Praesentium quam dignissimos sapiente dicta inventore odio 
+          aperiam debitis tempora commodi cupiditate impedit quisquam 
+          obcaecati eius, deleniti ipsa deserunt, labore fugiat ipsam.
+          </p>
+          <div id="seoModal" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1>SEO FRIENDLY</h1>
+                
+                  <span class="close" onclick="seoClose()">&times;</span>
+                 </div> 
+                <div class="modal-body">
+                  <p>Here is some text for seo friendly!</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- end of FEATURES -->
+
+
+
+      <!-- projects part -->
+      <div style="margin-top: 40px;" class="container">
+        <h1>PROJECTS</h1>
+        <div class="container-2">
+          <div class="about-project">
+            <h3>This is our projects</h3>
+            <h4>Click to Project Gallery picture to see more</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Praesentium quam dignissimos sapiente dicta inventore odio 
+                aperiam debitis tempora commodi cupiditate impedit quisquam 
+                obcaecati eius, deleniti ipsa deserunt, labore fugiat ipsam.
+            </p>
+          </div>
+          <div class="project-pictures">
+            <h3 style="margin-left: 3px;">Project Gallery</h3>
+            <div class="container-fluid">
+              <div class="row">
+            <img src="pictures/projects/project-1.jpg" alt="projectOne" onclick="displayFirst()">
+            <img src="pictures/projects/project-2.jpg" alt="projectTwo" onclick="displaySecond()">
+            <img src="pictures/projects/project-3.jpg" alt="projectThree" onclick="displayThird()">
+            <img src="pictures/projects/project-4.jpg" alt="projectFour" onclick="displayFourth()">
+            <img src="pictures/projects/project-5.jpg" alt="projectFive" onclick="displayFifth()">
+            <img src="pictures/projects/project-6.jpg" alt="projectSix" onclick="displaySixth()">
+            <img src="pictures/projects/project-7.jpg" alt="projectSeven" onclick="displaySeventh()">
+            <img src="pictures/projects/project-8.jpg" alt="projectEight" onclick="displayEight()">
+            <img src="pictures/projects/project-9.jpg" alt="projectNine" onclick="displayNine()">
+             </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- end of projects part -->
+      
+      <!-- about us part -->
+      <div style="margin-top: 40px;" class="container">
+         <h1>WHO WE ARE</h1>
+         <div class="container-3">
+           <div class="team-corp">
+             <img src="pictures/about us/people/team-1.jpg" alt="teamOne" />
+             <div class="text-container">
+               <h4>John Richards</h4>
+               <p>CEO</p>
+               <ul>
+                <li><a href="https://wwwhttps://www.linkedin.com" class="nav-link"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="https://wwwhttps://www.twitter.com" class="nav-link"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="https://wwwhttps://www.facebook.com" class="nav-link"><span class="fa fa-facebook"></span></a></li>
+               </ul>
+             </div>
+            </div>
+
+            <div class="team-corp">
+                <img src="pictures/about us/people/team-2.jpg" alt="teamOne" />
+                <div class="text-container">
+                  <h4>Michael Davis</h4>
+                  <p>C0O</p>
+                  <ul>
+                   <li><a href="https://wwwhttps://www.linkedin.com" class="nav-link"><span class="fa fa-linkedin"></span></a></li>
+                   <li><a href="https://wwwhttps://www.twitter.com" class="nav-link"><span class="fa fa-twitter"></span></a></li>
+                   <li><a href="https://wwwhttps://www.facebook.com" class="nav-link"><span class="fa fa-facebook"></span></a></li>
+                  </ul>
+                </div>
+               </div>
+
+               <div class="team-corp">
+                  <img src="pictures/about us/people/team-3.jpg" alt="teamOne" />
+                  <div class="text-container">
+                    <h4>Richard Doe</h4>
+                    <p>Online Marketing</p>
+                    <ul>
+                     <li><a href="https://wwwhttps://www.linkedin.com" class="nav-link"><span class="fa fa-linkedin"></span></a></li>
+                     <li><a href="https://wwwhttps://www.twitter.com" class="nav-link"><span class="fa fa-twitter"></span></a></li>
+                     <li><a href="https://wwwhttps://www.facebook.com" class="nav-link"><span class="fa fa-facebook"></span></a></li>
+                    </ul>
+                  </div>
+                 </div>  
+                 <div class="team-corp">
+                    <img src="pictures/about us/people/team-4.jpg" alt="teamOne" />
+                    <div class="text-container">
+                      <h4>Gareth Ferdinant</h4>
+                      <p>Developer</p>
+                      <ul>
+                       <li><a href="https://wwwhttps://www.linkedin.com" class="nav-link"><span class="fa fa-linkedin"></span></a></li>
+                       <li><a href="https://wwwhttps://www.twitter.com" class="nav-link"><span class="fa fa-twitter"></span></a></li>
+                       <li><a href="https://wwwhttps://www.facebook.com" class="nav-link"><span class="fa fa-facebook"></span></a></li>
+                      </ul>
+                    </div>
+                   </div> 
+
+                   <div class="team-corp">
+                      <img src="pictures/about us/people/team-5.jpg" alt="teamOne" />
+                      <div class="text-container">
+                        <h4>Jenifer Douglas</h4>
+                        <p>Creative Director</p>
+                        <ul>
+                         <li><a href="https://wwwhttps://www.linkedin.com" class="nav-link"><span class="fa fa-linkedin"></span></a></li>
+                         <li><a href="https://wwwhttps://www.twitter.com" class="nav-link"><span class="fa fa-twitter"></span></a></li>
+                         <li><a href="https://wwwhttps://www.facebook.com" class="nav-link"><span class="fa fa-facebook"></span></a></li>
+                        </ul>
+                      </div>
+                     </div> 
+
+                     <div class="team-corp">
+                        <img src="pictures/about us/people/team-6.jpg" alt="teamOne" />
+                        <div class="text-container">
+                          <h4>Maria Jones</h4>
+                          <p>Web Designer</p>
+                          <ul>
+                           <li><a href="https://wwwhttps://www.linkedin.com" class="nav-link"><span class="fa fa-linkedin"></span></a></li>
+                           <li><a href="https://wwwhttps://www.twitter.com" class="nav-link"><span class="fa fa-twitter"></span></a></li>
+                           <li><a href="https://wwwhttps://www.facebook.com" class="nav-link"><span class="fa fa-facebook"></span></a></li>
+                          </ul>
+                        </div>
+                       </div>
+              </div>
+      </div>
+
+<!-- about our company -->  
+<div style="margin-top: 40px;" class="container">
+    <div class="container-2">
+      <div class="about-project">
+        <h3>About Our Company</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Praesentium quam dignissimos sapiente dicta inventore odio 
+            aperiam debitis tempora commodi cupiditate impedit quisquam 
+            obcaecati eius, deleniti ipsa deserunt, labore fugiat ipsam.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Labore pariatur exercitationem ipsam sunt voluptates maxime.
+            Suscipit, veniam quas exercitationem, harum, saepe ad error
+            quam totam doloribus culpa ea odio quidem!
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Facilis dolorum corporis, delectus sit accusamus error ducimus
+           est unde ab veniam hic dolores quam repellat assumenda 
+           molestias repellendus dicta officiis animi.
+        </p>
+      </div>
+      <div class="project-pictures">
+        <h3 style="margin-left: 3px;">Our Offices</h3>
+        <div class="container-fluid">
+          <div class="row">
+        <img src="pictures/about us/office/office-1.jpg" alt="officeOne">
+        <img src="pictures/about us/office/office-2.jpg" alt="officeTwo">
+        <img src="pictures/about us/office/office-3.jpg" alt="officeThree">
+        <img src="pictures/about us/office/office-4.jpg" alt="officeFour">
+        <img src="pictures/about us/office/office-5.jpg" alt="officeFive">
+        <img src="pictures/about us/office/office-6.jpg" alt="officeSix">
+        <img src="pictures/about us/office/office-7.jpg" alt="officeSeven">
+        <img src="pictures/about us/office/office-8.jpg" alt="officeEight">
+        <img src="pictures/about us/office/office-9.jpg" alt="officeNine">
+         </div>
+      </div>
+      </div>
+    </div>
+  </div>
+ <!-- end od f part about us -->
+
+      <h1 style="margin-top: 40px;">OUR CLIENTS</h1>
+      <h1 style="margin-top: 40px;">CONTACT US</h1>
+    </div>
+
+    <!-- javaScript file for features part with modals -->
+    <script src="corporation.js"></script>
+    <!-- javaScript file for projects part -->
+    <script src="project.js"></script>
+    <!-- bootstrap javaScrip and jQuery files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
