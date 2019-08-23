@@ -4,6 +4,11 @@ h1 {
   text-align: center;
 }
 
+.test-header {
+  font-family: "Open Sans", sans-serif !important;
+  color: dodgerblue !important;
+}
+
 h4 {
   font-family: "Lalezar", cursive;
 }
@@ -77,6 +82,11 @@ nav .fa:hover {
 .container-1 .box h3 {
   color: dodgerblue;
   font-family: "Open Sans", sans-serif;
+}
+
+.container-1 .box .row .fa {
+  color: dodgerblue;
+  font-size: 50px;
 }
 
 .container-2 .about-project,
@@ -170,11 +180,19 @@ nav .fa:hover {
 }
 
 @media (max-width: 768px) {
+  .resp-header {
+    margin-bottom: 70px;
+  }
+  .test {
+    width: 80% !important;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
   .carousel-inner {
     max-height: 300px;
   }
   .caption {
-    color: white !important;
+    color: black !important;
     top: 35%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -268,15 +286,26 @@ nav .fa:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
 }
 
 .container-3 .team-corp {
   background-color: #e7e6e6;
   border-radius: 15px;
-  width: 15%;
+  width: 15% !important;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.container-3 .team-corp:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.container-3 .team-corp .text-container {
+  padding-left: 7px;
 }
 
 .container-3 img {
@@ -293,14 +322,14 @@ nav .fa:hover {
 }
 
 .container-3 ul li {
-  margin-left: -10px;
-  width: 33%;
+  margin-left: -20px;
+  width: 45%;
   float: left;
 }
 
 .container-3 ul .fa {
   margin-left: 5px;
-  background-color: grey !important;
+  background-color: dodgerblue !important;
   color: white !important;
   width: 30px;
   height: 30px;
@@ -310,7 +339,66 @@ nav .fa:hover {
   font-size: 20px;
 }
 
-.container-3 ul .fa:hover {
-  background-color: dodgerblue !important;
+form .input-style {
+  border-color: lightgrey !important;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+form .input-style:hover {
+  border-color: dodgerblue !important;
+}
+
+form .input-style:focus {
+  outline: none;
+}
+
+form p {
+  font-family: "Lalezar", cursive;
+  margin-bottom: -3px;
+  margin-top: 15px;
+}
+
+form .btn {
+  width: 20%;
+  float: right;
+}
+
+.find-part {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.find-part li:first-child {
+  margin-left: -25px;
+}
+
+.find-part li {
+  padding: 15px;
+  float: left;
+  width: 10%;
+}
+
+.find-part .fa {
+  background-color: grey;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.find-part .fa:hover {
+  background-color: dodgerblue;
+}
+
+.backToTop {
+  width: 30%;
+  float: right;
+  margin-right: 30px;
 }
 /*# sourceMappingURL=corporation.css.map */
